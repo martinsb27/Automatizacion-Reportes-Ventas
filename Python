@@ -1,0 +1,31 @@
+import pyodbc
+import pandas as pd
+from datetime import date
+
+fecha_inicio = '2024-01-01'
+fecha_fin = date.today()
+
+conexion = pyodbc.connect(
+    "DRIVER={ODBC Driver 17 for SQL Server};"
+    "SERVER=DESKTOP-17FV718;"
+    "DATABASE=VentasDB;"
+    "Trusted_Connection=yes;"
+    "Encrypt=yes;"
+    "TrustServerCertificate=yes;"
+)
+
+query = "EXEC sp_reporte_ventas ?, ?"
+df = pd.read_sql(query, conexion, params=[fecha_inicio, fecha_fin])
+
+# KPI adicional
+total_general = df['total_venta'].sum()
+
+# Exportar Excel profesional
+with pd.ExcelWriter("reporte_ventas.xlsx", engine="openpyxl") as writer:
+    df.to_excel(writer, sheet_name="Detalle Ventas", index=False)
+    pd.DataFrame({
+        "Total Ventas": [total_general]
+    }).to_excel(writer, sheet_name="Resumen", index=False)
+
+print("Reporte profesional generado correctamente.")
+
