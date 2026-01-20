@@ -41,7 +41,6 @@ Permite reducir el trabajo manual de generación de reportes y mejorar la precis
 ![Reporte Ventas - Parte 1](img/reporte-ventas1.png)  
 ![Reporte Ventas - Parte 2](img/reporte-ventas2.png)
 
-*(Reemplaza los nombres si tus imágenes tienen otro nombre exacto en la carpeta `/img`.)*
 
 ---
 
