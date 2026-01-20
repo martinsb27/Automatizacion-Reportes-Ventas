@@ -35,7 +35,7 @@ Permite reducir el trabajo manual de generación de reportes y mejorar la precis
 - **Generación de reportes en Excel (`reporte_ventas.xlsx`):** Archivo listo para uso por equipos no técnicos.
 
 **Ejemplos / Capturas:**  
-![Reporte en Excel](img/Detalle de ventas.png)  
+![Reporte en Excel](img/Resumen.png)
 *(Reemplaza con una captura real del reporte generado en Excel)*
 
 ---
