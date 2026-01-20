@@ -34,9 +34,14 @@ Permite reducir el trabajo manual de generación de reportes y mejorar la precis
 - **Transformación y limpieza de datos:** Uso de Python para preparar el dataset de forma adecuada.  
 - **Generación de reportes en Excel (`reporte_ventas.xlsx`):** Archivo listo para uso por equipos no técnicos.
 
-**Ejemplos / Capturas:**  
-![Reporte en Excel](img/Resumen.png)
-*(Reemplaza con una captura real del reporte generado en Excel)*
+---
+
+## Ejemplos / Capturas
+
+![Reporte Ventas - Parte 1](img/reporte-ventas1.png)  
+![Reporte Ventas - Parte 2](img/reporte-ventas2.png)
+
+*(Reemplaza los nombres si tus imágenes tienen otro nombre exacto en la carpeta `/img`.)*
 
 ---
 
@@ -44,7 +49,7 @@ Permite reducir el trabajo manual de generación de reportes y mejorar la precis
 
 1. Clona el repositorio.  
 2. Configura tu conexión a SQL Server si hace falta (en el código Python o en la configuración de conexión).  
-3. Ejecuta el script principal de Python (por ejemplo `main.py`).  
+3. Ejecuta el script principal de Python (`main.py`).  
 4. El archivo `reporte_ventas.xlsx` se generará automáticamente con los datos procesados.
 
 ---
