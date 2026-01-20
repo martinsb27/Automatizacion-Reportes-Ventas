@@ -36,7 +36,7 @@ Permite reducir el trabajo manual de generación de reportes y mejorar la precis
 
 ---
 
-## Ejemplos / Capturas
+## Capturas
 
 ![Reporte Ventas - Parte 1](img/reporte-ventas1.png)  
 ![Reporte Ventas - Parte 2](img/reporte-ventas2.png)
